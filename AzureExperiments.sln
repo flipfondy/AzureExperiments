@@ -5,6 +5,21 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureExperiments.Api", "AzureExperiments.Api\AzureExperiments.Api.csproj", "{BD9F8C61-9CF4-4968-A4C5-4505F8F55DCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureExperiments.Web", "AzureExperiments.Web\AzureExperiments.Web.csproj", "{9794298B-1BF2-434E-ADA5-69F03E2DCF8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F9A0C1D9-B57D-4158-91EB-09BF7E9BA9FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2CDB2FFA-232E-4AFD-9F04-7D3B1B327E64}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{D7B537C2-8248-4089-92DE-4D53826EA6F6}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\AzureExperimentsWeb.json = PublishScripts\Templates\AzureExperimentsWeb.json
+		PublishScripts\Templates\AzureExperimentsWeb.param.dev.json = PublishScripts\Templates\AzureExperimentsWeb.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +30,16 @@ Global
 		{BD9F8C61-9CF4-4968-A4C5-4505F8F55DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD9F8C61-9CF4-4968-A4C5-4505F8F55DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD9F8C61-9CF4-4968-A4C5-4505F8F55DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9794298B-1BF2-434E-ADA5-69F03E2DCF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9794298B-1BF2-434E-ADA5-69F03E2DCF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9794298B-1BF2-434E-ADA5-69F03E2DCF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9794298B-1BF2-434E-ADA5-69F03E2DCF8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CDB2FFA-232E-4AFD-9F04-7D3B1B327E64} = {F9A0C1D9-B57D-4158-91EB-09BF7E9BA9FE}
+		{D7B537C2-8248-4089-92DE-4D53826EA6F6} = {F9A0C1D9-B57D-4158-91EB-09BF7E9BA9FE}
 	EndGlobalSection
 EndGlobal
